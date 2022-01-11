@@ -7,14 +7,27 @@ repos:
     rev: v4.0.1
     hooks:
       - id: check-executables-have-shebangs
+      - id: fix-encoding-pragma
       - id: check-merge-conflict
+      - id: double-quote-string-fixer
       - id: end-of-file-fixer
+        exclude: &exclude_pre_commit_hooks >
+            (?x)^(
+                tests/.*(?<!\.py)$
+            )$
+      - id: mixed-line-ending
       - id: trailing-whitespace
+
 
   - repo: https://github.com/jorisroovers/gitlint
     rev: v0.15.1
     hooks:
       - id: gitlint
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+    - id: isort
 
   - repo: https://github.com/ambv/black
     rev: 21.9b0
