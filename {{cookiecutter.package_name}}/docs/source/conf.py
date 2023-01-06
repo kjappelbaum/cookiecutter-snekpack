@@ -64,11 +64,17 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx_autodoc_typehints',
-    'sphinx_click.ext',
     'sphinx_automodapi.automodapi',
     'sphinx_automodapi.smart_resolver',
     # 'texext',
 ]
+
+intersphinx_mapping = {
+    "pandas": ("https://pandas.pydata.org/docs/", None),
+    "sklearn": ("https://scikit-learn.org/stable/", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
+}
 
 # generate autosummary pages
 autosummary_generate = True
@@ -105,13 +111,18 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    "globaltoc_collapse": False,
+    "source_repository": "https://github.com/{{cookiecutter.github_organization_name}}/{{cookiecutter.github_repository_name}}",
+    "source_branch": "main",
+    "source_directory": "docs/source",
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

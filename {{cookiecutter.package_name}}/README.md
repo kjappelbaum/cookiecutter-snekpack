@@ -107,16 +107,10 @@ This project has been supported by the following organizations (in alphabetical 
 
 This project has been supported by the following grants:
 
-| Funding Body                                             | Program                                                                                                                       | Grant           |
-|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| DARPA                                                    | [Automating Scientific Knowledge Extraction (ASKE)](https://www.darpa.mil/program/automating-scientific-knowledge-extraction) | HR00111990009   |
+| Funding Body | Program                                                                                                                       | Grant         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| DARPA        | [Automating Scientific Knowledge Extraction (ASKE)](https://www.darpa.mil/program/automating-scientific-knowledge-extraction) | HR00111990009 |
 -->
-
-### 🍪 Cookiecutter
-
-This package was created with [@audreyfeldroy](https://github.com/audreyfeldroy)'s
-[cookiecutter](https://github.com/cookiecutter/cookiecutter) package using [@cthoyt](https://github.com/cthoyt)'s
-[cookiecutter-snekpack](https://github.com/cthoyt/cookiecutter-snekpack) template.
 
 ## 🛠️ For Developers
 
@@ -158,3 +152,9 @@ This script does the following:
 5. Bump the version to the next patch. If you made big changes and want to bump the version by minor, you can
    use `tox -e bumpversion minor` after.
 </details>
+
+### 🍪 Cookiecutter
+
+This package was created with [@audreyfeldroy](https://github.com/audreyfeldroy)'s
+[cookiecutter](https://github.com/cookiecutter/cookiecutter) package using [@cthoyt](https://github.com/cthoyt)'s
+[cookiecutter-snekpack](https://github.com/cthoyt/cookiecutter-snekpack) template.
